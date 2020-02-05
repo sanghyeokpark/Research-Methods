@@ -13,7 +13,11 @@ insheet using assignment1-research-methods.csv
 
 * Label your variables
 label variable calledback "calledback"
-label variable eliteschoolcandidate "EliteSchoolCandidate"
+label variable eliteschoolcandidate "eliteschoolcandidate"
+label variable malecandidate "malecandidate"
+label variable bigcompanycandidate "bigcompanycandidate"
+label variable recruiterismale "recruiterismale"
+label variable recruiteriswhite "recruiteriswhite"
 
 * Run regression: 
 reg calledback eliteschoolcandidate
