@@ -12,12 +12,12 @@ cd "/Users/sp3770/Documents/GitHub/Research-Methods/HW1"
 insheet using assignment1-research-methods.csv
 
 * Label your variables
-label variable calledback "calledback"
-label variable eliteschoolcandidate "eliteschoolcandidate"
-label variable malecandidate "malecandidate"
-label variable bigcompanycandidate "bigcompanycandidate"
-label variable recruiterismale "recruiterismale"
-label variable recruiteriswhite "recruiteriswhite"
+label variable calledback "Called Back"
+label variable eliteschoolcandidate "Elite School Candidate"
+label variable malecandidate "Male Candidate"
+label variable bigcompanycandidate "Big Company Candidate"
+label variable recruiterismale "Recruiter is Male"
+label variable recruiteriswhite "Recruiter is White"
 
 * Run regression: 
 reg calledback eliteschoolcandidate
