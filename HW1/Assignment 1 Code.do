@@ -2,7 +2,7 @@
 
 ssc install estout
 
-Also: Note you can type help [command] into Stata to get h elp on any command. 
+Also: Note you can type help [command] into Stata to get help on any command. 
 */
 
 *open directory
@@ -16,11 +16,11 @@ label variable calledback "Called Back"
 label variable eliteschoolcandidate "Elite School Candidate"
 label variable malecandidate "Male Candidate"
 label variable bigcompanycandidate "Big Company Candidate"
-label variable recruiterismale "Recruiter is Male"
-label variable recruiteriswhite "Recruiter is White"
+label variable recruiterismale "Male Recruiter"
+label variable recruiteriswhite "White Recruiter"
 
 * Run regression: 
-reg calledback eliteschoolcandidate
+reg calledback eliteschoolcandidate malecandidate
 
 * Store regression
 eststo regression_one 
@@ -28,4 +28,4 @@ eststo regression_one
 **********************************
 * FOR PEOPLE USING MICROSOFT: 
 global tableoptions "bf(%15.3gc) sfmt(%15.3gc) se label noisily noeqlines nonumbers varlabels(_cons Constant, end("" ) nolast)  starlevels(* 0.1 ** 0.05 *** 0.01) replace r2"
-esttab regression_one using Elite-School-Effect.rtf, $tableoptions keep(eliteschoolcandidate)
+esttab regression_one using Elite-School-Effect.rtf, $tableoptions keep(eliteschoolcandidate malecandidate)
